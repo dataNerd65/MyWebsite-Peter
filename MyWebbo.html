@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Kiarie - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="Container">
+            <h1>Peter Kiarie</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            </div>      
+    </header>
+    <section id="about">
+        <div class="Container">
+            <h2>About Me</h2>
+            <p>My name is Peter Kiarie, I am primarily a python developer based in Nairobi, Kenya. I also have inbound knowledge on Backend Engineering, Machine Learning and generally AI. I am a Computer Science Student at Masinde Muliro University of Science and Technology. I am always looking for new challenges and opportunities to learn new skills.</p>
+        </div>
+        </section>
+
+        <section id="contact">
+            <div class="Container">
+                <h2>Contact Me</h2>
+                <form action="contact.php" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                    <input type="submit" value="Send Message" class="button">
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="Container">
+                <p>&copy; 2024 - Peter Kiarie</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+
+</body>
+    
+</html>
