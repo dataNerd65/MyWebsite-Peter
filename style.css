@@ -19,8 +19,18 @@ body {
 
 header {
     background: #333;
-    color: #fff;
+    color: #dad9df;
     padding: 20px 0;
+    display: flex; /* Using flexbox to align items horizontally */
+    align-items: left; /* Center items vertically */
+}
+
+header img {
+    width: 250px; /* Adjust the width of the passport photo */
+    height: 250px; /* Adjust the height of the passport photo */
+    margin-right: 20px; /* Adding some spacing between the photo and the text */
+    align-self: flex-start; /* Align image to start(left) */
+
 }
 
 header h1 {
@@ -46,19 +56,19 @@ section {
 }
 
 section#about {
-    background-image: url('download.jpeg'); /* Adding background image */
+    background-image: url('Blue Technology Future Artificial Intelligence Science Background Wallpaper Image For Free Download - Pngtree.jpeg');
     background-size: cover;
     background-position: center;
-    color: #5908f0; /* Seting text color to white for better contrast */
+    color: #fffbf8;
 }
 
 section#about .Container {
-    padding: 40px; /* Adding padding to make text more readable */
+    padding: 40px;
 }
 
 footer {
     background: #333;
-    color: #a59022;
+    color: #3a0101;
     text-align: center;
     padding: 20px 0;
 }
