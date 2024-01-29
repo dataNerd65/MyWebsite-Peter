@@ -49,7 +49,7 @@ section#about {
     background-image: url('download.jpeg'); /* Adding background image */
     background-size: cover;
     background-position: center;
-    color: #f00808; /* Seting text color to white for better contrast */
+    color: #5908f0; /* Seting text color to white for better contrast */
 }
 
 section#about .Container {
