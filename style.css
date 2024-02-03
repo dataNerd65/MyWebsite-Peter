@@ -7,34 +7,36 @@
 
 /* Basic styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    background-color: #f5f5f5; /* Light gray background color */
+    color: #333; /* Main text color */
 }
 
 .Container {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    justify-content: space-between; /* Spread items horizontally */
+    align-items: center;
 }
 
 header {
     background: #333;
-    color: #dad9df;
+    color: #fff;
     padding: 20px 0;
-    display: flex; /* Using flexbox to align items horizontally */
-    align-items: left; /* Center items vertically */
 }
 
 header img {
-    width: 250px; /* Adjust the width of the passport photo */
-    height: 250px; /* Adjust the height of the passport photo */
-    margin-right: 20px; /* Adding some spacing between the photo and the text */
-    align-self: flex-start; /* Align image to start(left) */
-
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 1.8em;
+    margin-bottom: 10px; /* Add some space below the heading */
 }
 
 nav ul {
@@ -49,26 +51,148 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Change color on hover */
 }
 
 section {
-    padding: 40px 0;
+    padding: 40px 20px; /* Add padding to all sections */
 }
 
 section#about {
     background-image: url('Blue Technology Future Artificial Intelligence Science Background Wallpaper Image For Free Download - Pngtree.jpeg');
     background-size: cover;
     background-position: center;
-    color: #fffbf8;
+    color: #fff; /* Light text color for better contrast */
+    padding: 80px 20px; /* Increase padding for better spacing */
+    text-align: center; /* Center-align the text */
+    background-color: rgba(0, 0, 0, 0.6); /* Add background opacity */
 }
+
 
 section#about .Container {
     padding: 40px;
 }
 
+section#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section#about p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
 footer {
     background: #333;
-    color: #3a0101;
+    color: #fff;
     text-align: center;
     padding: 20px 0;
 }
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Portfolio Item styles */
+.Portfolio-Item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Portfolio-Item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.Portfolio-Item h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.Portfolio-Item p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Hover effect on Portfolio Items */
+.Portfolio-Item:hover {
+    transform: translateY(-5px); /* Move the item up slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+section#contact {
+    background: #f9f9f9; /* Light gray background color */
+    color: #333; /* Main text color */
+    padding: 80px 20px; /* Add padding for better spacing */
+    text-align: center; /* Center-align the content */
+}
+
+section#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section#contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+section#contact input[type="text"],
+section#contact input[type="email"],
+section#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+section#contact textarea {
+    height: 150px; /* Set a fixed height for the textarea */
+}
+
+section#contact input[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth background transition on hover */
+}
+
+section#contact input[type="submit"]:hover {
+    background: #555; /* Darken the background color on hover */
+}
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: #333; /* Main text color */
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
